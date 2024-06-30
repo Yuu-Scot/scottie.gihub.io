@@ -1,0 +1,311 @@
+/*************************************************************/
+
+/* APARTADO PARA BODY - SE USAN DOS FONDOS CON AYUDA DE JAVA */
+
+/*************************************************************/
+body {
+/* Establece la imagen de fondo */
+    background-image: url('images/fondo.jpg');   
+/* Haz que la imagen de fondo cubra toda la pantalla */
+    background-size: cover;   
+/* Alinea la imagen de fondo al centro */
+    background-position: center;   
+/* Evita que la imagen de fondo se repita */
+    background-repeat: no-repeat; 
+/* Asegúrate de que la imagen esté fija en su lugar cuando se desplaza */
+    background-attachment: fixed;
+/* Color del texto base en todo el body*/
+    color: white;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    box-sizing: border-box;
+}
+body.menu1-active,
+body.menu2-active {
+    background-image: url('images/fondo.jpg'); /* Fondo por defecto para menú 1 y 2 */
+}
+body.menu3-active {
+    background-image: url('images/fondo2.jpg'); /* Fondo diferente para menú 3 */
+/* Haz que la imagen de fondo cubra toda la pantalla */
+    background-size: cover;
+/* Alinea la imagen de fondo al centro */
+    background-position: center;
+/* Evita que la imagen de fondo se repita */
+    background-repeat: no-repeat;
+/* Asegúrate de que la imagen esté fija en su lugar cuando se desplaza */
+    background-attachment: fixed;
+/* Color del texto base en todo el body*/
+    color: white;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    place-items: center;
+    box-sizing: border-box; 
+}
+
+/*************************/
+
+/* APARTADO PARA COLORES */
+
+/*************************/
+#image__fondo,
+#header__main, 
+.li__menu,  
+.main-section, 
+.informacion__Flexbox,
+.historia__Flexbox,
+.historia__flex-item,
+.headcanon__Flexbox,
+#AU,
+.limpiadores__Flexbox,
+.creditos__Flexbox{
+    background-color: rgba(135,76,21, 0.9);
+}
+.Sub-Titulo1__Web1, .Sub-Titulo1__Web2{
+    background-color: rgba(215, 169, 52, 0.9);
+}
+
+.ul__menu2 :is(.li__menu){
+    background-color:#262320;
+}
+#Marbhlann :is(header){
+    background-color: rgba(26,23,20, 0.9);
+}
+.como-opera__Flexbox,
+.servicios__Flexbox,
+.obtener__Flexbox,
+.funeraria__Flexbox,
+.clausulas__Flexbox{
+    background-color: rgba(26,23,20, 0.9);
+}
+
+/*********************************************************/
+
+/* APARTADO PARA LOS TITUTLOS Y LOS SUB TITULOS Y TEXTOS */
+
+/*********************************************************/
+.Titulo__Web1,
+.Titulo__Web2{
+    text-align: center;
+    color: #FFFFFF;
+    font-family: 'Bona Nova', serif;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 1.875em;
+    line-height: 1.25;
+    font-weight: 400;
+    text-shadow: 0.088rem 0.088rem 0.125rem #C2B7A1;
+}
+.Sub-Titulo1__Web1, 
+.Sub-Titulo1__Web2{
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.Titulo__Web2{
+    padding-top: 20px;
+    font-size: 2.875em;
+}
+
+li{
+    list-style: none;
+}
+
+mark{
+    background-color: rgba(215, 169, 52, 0.9);
+}
+
+ul, p{
+    margin: 0;
+    text-align: justify;
+    padding: 0 10px;
+    
+}
+.ul__menu1, .ul__menu2{
+    text-align: center;
+    
+}
+.limpiadores__p{
+    max-width: 400px;
+    min-width: 400px;
+}
+/***********************************/
+
+/* APARTADO PARA EL MENU PRINCIPAL */
+
+/***********************************/
+#header__menu1, #marbhlann__menu2{
+    box-sizing: border-box;
+}
+.li__menu{
+    display: inline-block; /* Mostrar en línea */
+    color: white; /* Texto blanco */
+    padding: 5px 15px; /* Espaciado interno */
+    margin: 1px; /* Espaciado entre botones */
+    margin-bottom: 0;
+    border: none; /* Sin borde */
+    border-radius: 5px 5px 0px 0px; /* Bordes redondeados */
+    text-align: center; /* Centrado de texto */
+    text-decoration: none; /* Sin subrayado */
+    cursor: pointer; /* Cambiar cursor a mano */
+    font-size: 16px; /* Tamaño de fuente */
+    transition: background-color 0.3s; /* Transición suave */
+    min-width: 120px;
+}
+.li__menu a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/******************************/
+
+/* APARTADO PARA LAS IMAGENES */
+
+/******************************/
+
+.image__fondo{
+    width: 950px;
+}
+
+#image04, .image04, .image01{
+    margin: 0;
+    padding: 0;
+}
+.image02{
+    width: 200px;
+    padding-top: 150px;
+}
+.image01{
+    width: 400px;
+    padding-top: 80px;
+}
+.image11, .image03, .image10 {
+    width: 300px;
+    height: 300px;
+}
+.image07{
+    width: 300px;
+}
+.image09{
+    width: 350px;
+}
+/***************************/
+
+/* APARTADO PARA LAS CAJAS */
+
+/***************************/
+
+section :is(
+    header, 
+    .main-section, 
+    .informacion__Flexbox,
+    .informacion__Flex-item,
+    .historia__Flexbox,
+    .historia__flex-item,
+    .headcanon__Flexbox,
+    .headcanon__Flex-item,
+    .AU__Flexbox,
+    .AU__Flex-item,
+    .limpiadores__Flexbox,
+    .limpiadores__Flex-item,
+    .creditos__Flexbox,
+    .creditos__Flex-item,
+    .como-opera__Flexbox,
+    .como-opera__Flex-item,
+    .servicios__Flexbox,
+    .servicios__Flex-item,
+    .obtener__Flexbox,
+    .obtener__Flex-item,
+    .funeraria__Flexbox,
+    .funeraria__Flex-item,
+    .clausulas__Flexbox,
+    .clausulas__Flex-item){
+        width: 950px;
+        box-sizing: border-box;
+        text-align: center;
+}
+
+#header__main, #header__main2{
+    width: 950px;
+        box-sizing: border-box;
+        text-align: center;
+}
+
+section :is(
+    header, 
+    .main-section){
+        min-width: 950px;
+        max-width: 950px;
+}
+
+#header {
+    padding-bottom: 0;
+}
+.informacion__Flexbox, 
+.historia__Flexbox,
+.headcanon__Flexbox,
+.AU__Flexbox,
+.limpiadores__Flexbox,
+.creditos__Flexbox,
+.como-opera__Flexbox,
+.servicios__Flexbox,
+.obtener__Flexbox,
+.funeraria__Flexbox,
+.clausulas__Flexbox{
+    display: flex;
+    justify-content: center;
+}
+
+.headcanon__Flexbox{
+    justify-content: space-around;
+}
+
+.limpiadores__Flexbox{
+    justify-content: start;
+}
+.creditos__Flexbox, .funeraria__Flexbox{
+    justify-content: space-around;
+}
+.informacion__Flex-item, 
+.historia__Flex-item,
+.headcanon__Flex-item,
+.AU__Flex-item,
+.limpiadores__Flex-item,
+.creditos__Flex-item,
+.como-opera__Flex-item,
+.servicios__Flex-item,
+.obtener__Flex-item,
+.funeraria__Flex-item,
+.clausulas__Flex-item{
+    max-width: 350px;
+    padding: 10px 0;
+}
+.limpiadores__Flex-item{
+    padding-left: 50px;
+}
+
+.informacion__Flex-item:nth-child(2n), 
+.historia__Flex-item:nth-child(2n){
+    max-width: 200px;
+}
+
+.informacion__list li{
+    min-width: 300px;
+    max-width: 300px;
+    text-align: left;
+}
+
+.headcanon__list li{
+    min-width: 370px;
+    max-width: 370px;
+    text-align: left;
+}
+.servicios__Flex-item, .clausulas__Flex-item{
+    max-width: 900px;
+    padding: 10px 0;
+}
